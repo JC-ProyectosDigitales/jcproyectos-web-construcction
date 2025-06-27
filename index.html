@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JC Proyectos Digitales - Página en Construcción</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA4eMYNDA9c3SZc1Z8U-Ox6YzLYthFAzdg",
+    authDomain: "jc-proyectosdigitales-4f249.firebaseapp.com",
+    projectId: "jc-proyectosdigitales-4f249",
+    storageBucket: "jc-proyectosdigitales-4f249.firebasestorage.app",
+    messagingSenderId: "729022547077",
+    appId: "1:729022547077:web:2f9a4ca3248aa5eaa455ec",
+    measurementId: "G-PWN44MSS8E"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+    <h1>JC Proyectos Digitales</h1>
+
+    <p class="description">
+        Estamos trabajando para lanzar nuestro sitio. Ayudamos a freelancers, emprendedores y marcas personales a construir una identidad visual profesional, accesible y coherente. Muy pronto podrás conocer más de nuestros servicios.
+    </p>
+
+    <div class="services">
+        <div class="service" style="background-image: url(/img/identidad.avif);">
+            <div class="service-content">
+                <h3>Identidad Exprés</h3>
+                <p>Logo, paleta de colores y portada editable para redes.</p>
+            </div>
+        </div>
+        <div class="service" style="background-image: url(/img/branding.jpg);">
+            <div class="service-content">
+                <h3>Brand Kit Básico</h3>
+                <p>Logo, tipografía, colores y moodboard visual.</p>
+            </div>
+        </div>
+            <div class="service" style="background-image: url(/img/diseño-web.jpg);">
+            <div class="service-content">
+                <h3>Mini Sitio Web</h3>
+                <p>Landing page profesional para mostrar tus servicios.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>⏳ Lanzamiento en:</h2>
+    <div class="countdown" id="countdown">
+        <div><span id="days">00</span>Días</div>
+        <div><span id="hours">00</span>Horas</div>
+        <div><span id="minutes">00</span>Minutos</div>
+        <div><span id="seconds">00</span>Segundos</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

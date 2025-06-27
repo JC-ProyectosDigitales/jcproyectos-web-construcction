@@ -1,0 +1,131 @@
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+        /* Paleta de colores (puedes personalizarlos luego) */
+    --color-primario: #111111;
+    --color-secundario: #f6f6f6;
+    --color-acento: #3A6EA5;
+    --color-enlace: #8AC4E4;
+
+    /* Tipografías */
+    --fuente-principal: 'Cocomat Pro', 'Nunito', sans-serif;
+    }
+
+
+
+
+    body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Ajusta el valor según lo que necesites */
+    z-index: -1;
+    }
+
+    h1 {
+    font-family: 'Cocomat Pro', sans-serif;
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    p.description {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    font-size: 1.1rem;
+    color: var(--color-secundario);
+    line-height: 1.6;
+    }
+
+    .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 40px;
+    }
+
+    .service {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: var(--color-secundario);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    position: relative;    
+    }
+
+    .service::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    }
+
+    .service-content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    }
+
+    .service h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--color-secundario);
+    }
+
+    .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+    }
+
+    .countdown div {
+    background-color: var(--color-acento);
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: var(--color-secundario);
+    min-width: 80px;
+    font-size: .8rem;
+    }
+
+    .countdown span {
+    display: block;
+    font-size: 3rem;
+    margin-top: 5px;
+    }
